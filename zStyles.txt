@@ -1,0 +1,7 @@
+bg color: #242828
+component: #51706C
+button: #13D0BA
+txt color: #FFFFFF
+
+
+property name change form

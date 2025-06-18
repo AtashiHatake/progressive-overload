@@ -1,0 +1,22 @@
+.form-wrapper {
+  padding: 2px;
+  background-color: #51706C;
+  height: 40vh;
+  width: 35vw;
+  border-radius: 15px;
+}
+
+.form-group {
+  background-color: #51706C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* verticle center */
+  align-items: center;     /* horizontal center */
+  
+}
+
+
+.first-child {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
