@@ -12,4 +12,5 @@ body {
   align-items: center;     /* vertical center */
   background-color: #242828; 
   color: #FFFFFF;
+  overflow: hidden;
 }
