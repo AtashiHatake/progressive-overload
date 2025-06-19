@@ -1,4 +1,4 @@
-import "/home/atharvabhosale/react-projects/gym-progressive-overload/MainComponent.css"
+import './MainComponent.css'
 
 import { useState } from "react";
 
