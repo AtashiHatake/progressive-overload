@@ -7,16 +7,20 @@ const MainComponent = () => {
   const [lastReps, setLastReps] = useState();
   const [result, setResult] = useState('');
 
-  const overload = (weight, reps) => {
-    if(reps <= 8) {
-      return `Increase reps to 12`;
-    } else if (reps >= 12) {
-     const roundToNearest = (num, step) => Math.round(num / step) * step;
-     const increaseWeight = roundToNearest(weight + 2.5, 2.5);
+ const overload = (weight, reps) => {
+  if (reps < 8) {
+    return `Increase reps to 12`;
+  } else if (reps >= 8 && reps < 12) {
+    return `Try to reach 12 reps`;
+  } else if (reps >= 12) {
+    const roundToNearest = (num, step) => Math.round(num / step) * step;
+    const increaseWeight = roundToNearest(weight + 2.5, 2.5);
+    return `Increase weight to ${increaseWeight}`;
+  } else {
+    return `Give valid inputs`;
+  }
+};
 
-      return `Increase weight to ${increaseWeight}`;
-    }
-  };
 
   const handleInput = (e) => {
     e.preventDefault();
